@@ -1,5 +1,5 @@
 node {
-  stage('Remote Hello'){
-     echo "Hello World!"
+  withCredentials([string(credentialsId: 'test', variable: 'mysecret')]) {
+        echo "${mysecret}"
   }
 }
