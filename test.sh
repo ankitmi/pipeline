@@ -1,3 +1,3 @@
-#!/bin/sh
+echo "Inside shell"
 
 echo $mysecret
